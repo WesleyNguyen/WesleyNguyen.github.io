@@ -4,7 +4,7 @@
     <link href="styles.css" rel="stylesheet" />
 
 <div class="tab">
-  <button class="tablinks" onclick="clickHandle(event, 'About')">About</button>
+  <button class="tablinks" onclick="clickHandle(event, 'About')" id="defaultOpen">About</button>
   <button class="tablinks" onclick="clickHandle(event, 'Projects')">Projects</button>
   <button class="tablinks" onclick="clickHandle(event, 'Contact')">Projects</button>
 
@@ -43,6 +43,8 @@ src="https://www.youtube.com/watch?v=17VR3sdFz1s">
 </div>
     
 <script>
+document.getElementById("defaultOpen").click();
+    
 function clickHandle(evt, animalName) {
   let i, tabcontent, tablinks;
 
